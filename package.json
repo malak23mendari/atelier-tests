@@ -1,0 +1,19 @@
+{
+  "name": "atelier-tests",
+  "version": "1.0.0",
+  "description": "Atelier pyramide de tests",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest",
+    "test:unit": "jest tests/unit --coverage",
+    "test:int": "jest tests/integration --runInBand",
+    "test:e2e": "playwright test"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/e2e/"
+    ]
+  }
+}
