@@ -15,5 +15,8 @@
       "/node_modules/",
       "/e2e/"
     ]
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
   }
 }
